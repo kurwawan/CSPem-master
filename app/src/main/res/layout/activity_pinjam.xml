@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+    android:layout_marginRight="@dimen/activity_horizontal_margin"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    tools:context="com.devjurnal.coworkingspacepemkot.PinjamActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cari Berdasarkan : "
+        android:id="@+id/tvCari"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal : "
+        android:textColor="#000"
+        android:layout_below="@+id/tvCari"
+        android:id="@+id/tvTgl" />
+    <android.support.design.widget.TextInputEditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tvTgl"
+        android:id="@+id/edtTgl"
+        android:hint="dd/MM/yyyy"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+    </android.support.design.widget.TextInputEditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuota : "
+        android:textColor="#000"
+        android:layout_below="@+id/edtTgl"
+        android:id="@+id/tvKuota" />
+    <Spinner
+        android:id="@+id/spinKuota"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvKuota">
+    </Spinner>
+
+    <!---
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/edtTgl">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Kuota : ... (orang)"
+            android:id="@+id/edtKuota"/>
+    </android.support.design.widget.TextInputLayout>-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Cari"
+        android:id="@+id/btnCari"/>
+</RelativeLayout>

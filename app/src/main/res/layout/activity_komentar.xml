@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="com.devjurnal.coworkingspacepemkot.KomentarActivity">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Silahkan isi komentar penialain anda :"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textStyle="bold"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edtKomentar"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="8"
+            android:gravity="start|left"
+            android:hint="isi komentar"
+            android:textSize="16sp"
+            android:textColor="#000"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:onClick="btnKomentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="kirim komentar"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="right"/>
+
+</LinearLayout>

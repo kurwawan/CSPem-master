@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.devjurnal.coworkingspacepemkot">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Co-Working Space Pemkot"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up" />
+        <activity android:name=".PinjamActivity" />
+        <activity
+            android:name=".ListTempatActivity"
+            android:label="List Ruangan" />
+        <activity
+            android:name=".FormPeminjamanActivity"
+            android:label="Form Peminjaman" />
+        <activity
+            android:name=".DetailPeminjamanActivity"
+            android:label="Detail Peminjaman" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KomentarActivity"
+            android:label="Komentar Penilaian"></activity>
+    </application>
+
+</manifest>
